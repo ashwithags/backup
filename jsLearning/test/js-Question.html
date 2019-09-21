@@ -1,0 +1,60 @@
+<html>
+<style type="text/css">
+	table {
+    border: 0px;
+    cell-spacing: 0px;
+    width: 50%;    background-color: #f2f2f2;
+    margin: auto;
+}
+th p {
+    font-size: 29px;
+    padding: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+input.sub {
+    background-color: #3F51B5;
+    color: #fff;
+    padding: 9px 20px;
+    border: 0px;
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+display();
+}
+
+function display(){
+	var exam = new Object();
+	exam.questionset= 'javascriptquestionset';
+	var tableData = '';
+	var structure='<table border=0 cell-spacing=0><thead><th></th><th><p>JAVASCRIPT Questions</p></th></thead><tbody>';
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if((this.readyState == 4)&&(this.status == 200)){
+			var quest = JSON.parse(this.responseText);
+
+		console.log(quest.questions);
+       
+         tableData +='<tr><td>Q1.</td><td>'+quest.questions[0].question+'</td></tr><tr><td>Choice.</td><td><input name="option" type=radio>'+quest.questions[0].choices[0]+'</br><input name="option" type=radio>'+quest.questions[0].choices[1]+'</br><input name="option" type=radio>'+quest.questions[0].choices[2]+'</br><input name="option" type=radio>'+quest.questions[0].choices[3]+'</td></tr>'
++'</td></tr><tr><td></td><td><input class="sub" type=button value=CHECK></td></tr>'
+
+		document.getElementById('q').innerHTML=structure+tableData+'</tbody></table>';
+
+		}
+	};
+	xhttp.open('POST','http://192.168.1.13:7000/ideology/examsets',true);
+	xhttp.setRequestHeader('Content-Type','application/json');
+	xhttp.send(JSON.stringify(exam));
+}
+
+
+</script>
+<body>
+	
+<div id="q"></div>
+</body>
+</html>
+

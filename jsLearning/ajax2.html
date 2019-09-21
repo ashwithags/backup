@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title></title>
+	<style>
+	body {
+    background-color: #779dbb;
+}
+		#add2{
+			display: none;
+    background-color: #20945e;
+    color: #fff;
+    font-size: 23px;
+    font-style: italic;
+		}
+		.form {
+	    width: 26%;
+	    background-color: #e4e1e1;
+	    margin: auto;
+	    padding: 30px;
+       }
+       input {
+    width: 100%;font-size: 16px;
+    padding: 19px;
+    margin: 0, auto;
+    border: 0px;
+    border-bottom: 2px solid #374073;
+    margin-bottom: 10px;
+}
+p.dtal-box {
+    text-align: center;
+    font-size: 27px;
+    font-family: arial;
+    font-style: italic;
+}
+input#add1 {
+    background-color: #374073;
+    color: #fff;
+    font-size: 23px;
+    font-style: italic;
+}
+
+		td {
+    padding: 10px 50px;
+}
+th {
+    padding: 10px 50px;
+}
+table, th, td {
+    border: 1px solid #bdb9b9;    width: 50%;
+
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+table th {
+    color: white;
+    background-color: #167f92;
+}
+	</style>
+</head>
+
+<body>
+
+	<div class="form">
+	<br>
+		 <p class="dtal-box">Please Fill the details Bellow</p>
+		<input type="text" name="n" id="name" placeholder="Name" />
+		<input type="text" name="p" id="place" placeholder="Place" />
+		<input type="number" name="m" id="mobile" placeholder="Mobile No" />
+		<input type="text" name="s" id="state" placeholder="State" />
+
+
+		<input type="button" name="" id="add1" value="Insert" onclick="getDetail()" />
+		<input type="button" name="" id="add2" value="Update" onclick="editDetail()" />
+
+	<br><br>
+	</div>
+
+		<div id="Details"></div>
+
+
+
+
+<script type = "text/javascript" src="js/ajax2.js"></script>
+</body>
+</html>
+

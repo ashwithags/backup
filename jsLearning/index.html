@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#update{
+			background-color: indigo;
+			color: white;
+			border-radius: 4px;
+		}
+		#cancel{
+			background-color: red;
+			color:white;
+			border-radius: 4px;
+		}
+.emp-detail {
+    padding: 10px;
+    background-color: #676790;
+    color: #fff;
+    font-size: 17px;float: left;
+    border: 1px solid #673AB7;
+    border-radius: 4px;
+    margin: 30px;
+}
+.personal-detail {
+    padding: 10px;
+    background-color: #676790;
+    color: #fff;
+    font-size: 17px;
+    border: 1px solid #673AB7;
+    border-radius: 4px;
+    margin: 30px;
+}
+td {
+    padding: 10px;
+}
+th {
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid #bdb9b9;
+    border-collapse: collapse;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+table th {
+    color: white;
+    background-color: #5a5959;
+}
+input#salary {
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+button#getSalary {
+    padding: 10px;
+}
+	</style>
+</head>
+<body style="margin:0px;">
+
+	<div id="banner" style="display: none; background-color: lightblue; height:80px;">Kindly update your browser 
+		<span id="bname" style="font-weight: bold;"></span> as its not updated.
+		<button id="update">Update</button> <button id="cancel">Cancel</button></div>
+
+		<p><strong>ENTER YOUR ANUAL SALARY</strong></p>
+		<input type="text" name="salary" id="salary">
+		<button id="getSalary" class="salary-detail" onclick="getSalary()">Get Salary Slip</button>
+		<div id="slip"></div>
+
+
+		<button id="getEmp" class="emp-detail" onclick="getEmp()">Get Employee</button>
+		<div id="data"></div>
+
+		<button id="getDetail" class="personal-detail" onclick="getDetail()">Get Profile</button>
+		<div id="profile"></div>
+
+
+
+		<script type="text/javascript" src="js/arrayExample.js"></script>	
+		<script type="text/javascript" src="js/salary.js"></script>
+				<!--script type="text/javascript" src="js/profile.js"></script-->	
+
+
+	</body>
+	</html>
+
+	

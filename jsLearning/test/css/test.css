@@ -1,0 +1,82 @@
+.box {
+    width: 25%;
+    padding: 50px 50px 100px;
+    margin: auto;
+        border-radius: 4px;   
+        margin-top: 105px !important;
+    background-color: rgba(33, 43, 66, 0.43);
+}
+
+.box2 {
+    width: 25%;
+    padding: 50px;
+    MARGIN-TOP: 50PX !IMPORTANT;
+    margin: auto;
+    border-radius: 4px;
+    /* float: left; */
+    height: 351px;
+    background-color: rgba(226, 226, 226, 0.74);
+}
+#detail {
+    /* width: 50%; */
+    padding: 19px;
+    margin: auto !important;
+    background-color: rgba(34, 50, 84, 0.73);
+    margin-top: 20px;
+    color: #fff;
+    border-bottom: 0px;
+    font-size: 20px;
+}
+p.wel {
+    font-size: 31px;
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+}
+
+a.course {
+    width: 31%;
+    float: left;
+    margin: 10px 9PX;
+    border: 0px;    font-size: 19px;
+    padding: 23px;
+    border-radius: 4px;
+    color: #fff;
+    background-color:rgba(34, 50, 84, 0.73);
+    text-align: center;
+    text-decoration: none;
+}
+@media only screen and (max-width: 450px) and (min-width: 300px){
+	.box {
+    width: 70%;
+    }
+}
+@media only screen and (max-width: 750px) and (min-width: 470px){
+	.box {
+    width: 50%;
+    }
+ 
+p.idlgy {
+    text-align: center;
+    font-size: 39px;    font-family: cursive;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+@media only screen and (max-width: 450px) and (min-width: 300px){
+    .box2 {
+    width: 50%;
+    height: 490px;
+}
+    a.course {
+    width: 75%;
+}
+}
+@media only screen and (max-width: 750px) and (min-width: 470px){
+   .box2 {
+    width: 50%;
+    height: 490px;
+}
+    a.course {
+    width: 75%;
+}

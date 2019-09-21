@@ -1,0 +1,107 @@
+<html>
+<script type="text/javascript">
+	window.onload = function(){
+		if(sessionStorage.getItem('loggedInUser') ==undefined || sessionStorage.getItem('loggedInUser')==null)
+		{
+			//window.location.href="index.html";
+		}
+	};
+	function Question(q){
+		sessionStorage.setItem('questionSet', q);
+		window.location.href="q.html";
+	}
+</script>
+<style type="text/css">
+
+body{
+	    BACKGROUND: url(img/BG2.jpg);
+font-family: arial;
+}
+.box2 {
+    width: 25%;
+    padding: 50px;
+    MARGIN-TOP: 50PX !IMPORTANT;
+    margin: auto;
+    border-radius: 4px;
+    /* float: left; */
+    height: 351px;
+    background-color: rgba(226, 226, 226, 0.74);
+}
+input {
+    width: 100%;
+    padding: 15px 0px;
+    border: 0px;
+    border-bottom: 2px solid #989494;
+}
+button#detail {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(34, 50, 84, 0.73);;
+    margin-top: 20px;
+    color: #fff;
+}
+a.course {
+    width: 31%;
+    float: left;
+    margin: 10px 9PX;
+    border: 0px;    font-size: 19px;
+    padding: 23px;
+    border-radius: 4px;
+    color: #fff;
+    background-color:rgba(34, 50, 84, 0.73);
+    text-align: center;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+}
+p.idlgy {
+    text-align: center;
+    font-size: 39px;    font-family: cursive;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+@media only screen and (max-width: 450px) and (min-width: 300px){
+    .box2 {
+    width: 50%;
+    height: 490px;
+}
+    a.course {
+    width: 75%;
+}
+}
+@media only screen and (max-width: 750px) and (min-width: 470px){
+   .box2 {
+    width: 50%;
+    height: 490px;
+}
+    a.course {
+    width: 75%;
+}
+}
+</style>
+<body>
+<div class="box2">
+<p class="idlgy">Idealogy</p>
+<!--a  class="course" href="http://localhost/jsLearning/html-Question.html">HTML</a>
+<a  class="course" href="http://localhost/jsLearning/ajax-Question.html">AJAX</a>
+<a  class="course" href="http://localhost/jsLearning/js-Question.html">JS</a>
+<a  class="course" href="http://localhost/jsLearning/boot-Question.html">BOOTSTRAP</a-->
+
+<a  class="course" onclick="Question('html')">HTML</a>
+<a  class="course" onclick="Question('ajax')">AJAX</a>
+<a  class="course" onclick="Question('js')">JS</a>
+<a  class="course" onclick="Question('bootstrap')">BOOTSTRAP</a>
+
+
+
+</div>
+
+</body>
+</html>
+
