@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "Message": "Success",
+    "questions": [
+        {
+            "question": "Tags and test that are not directly displayed on the page are written in _____ section.",
+            "choices": [
+                "html",
+                "head",
+                "title",
+                "body"
+            ],
+            "correct": "head"
+        },
+        {
+            "question": "<b> tag makes the enclosed text bold. What is other tag to make text bold?",
+            "choices": [
+                "strong",
+                "dar",
+                "black",
+                "emp"
+            ],
+            "correct": "strong"
+        }
+    ]
+}

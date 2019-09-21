@@ -1,0 +1,36 @@
+{
+    "success": true,
+    "Message": "Success",
+    "questions": [
+        {
+            "question": "AJAX based on ______ ??",
+            "choices": [
+                "VBScript and XML",
+                "JavaScript and XML",
+                "JavaScript and Java",
+                "JavaScript and HTTP requests"
+            ],
+            "correct": "JavaScript and XML"
+        },
+        {
+            "question": "What makes Ajax unique???",
+            "choices": [
+                "It makes data requests asynchronously.",
+                "It uses C++ as its programming language.",
+                "It works the same with all Web browsers.",
+                "It works as a stand-alone Web-development tool."
+            ],
+            "correct": "It makes data requests asynchronously."
+        },
+        {
+            "question": "Full form of Ajax",
+            "choices": [
+                "Asynchronous JavaScript and XML.",
+                "Asynchronous JavaScript and JSON.",
+                "Asynchronous Java and XML.",
+                "None of the above."
+            ],
+            "correct": "Asynchronous JavaScript and XML."
+        }
+    ]
+}

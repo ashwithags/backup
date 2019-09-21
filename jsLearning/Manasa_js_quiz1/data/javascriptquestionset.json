@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "Message": "Success",
+    "questions": [
+        {
+            "question": "JavaScript is designed for following purpose -",
+            "choices": [
+                "To perform serverside scripting operation",
+                "To execute query related to DB on server",
+                "To add interactivity to HTML pages",
+                "To add styling to HTML pages"
+            ],
+            "correct": "To add interactivity to HTML pages"
+        },
+        {
+            "question": "Javascript is _________ language.",
+            "choices": [
+                "Programming",
+                "Application",
+                "Scripting",
+                "None of the above."
+            ],
+            "correct": "Scripting"
+        }
+    ]
+}

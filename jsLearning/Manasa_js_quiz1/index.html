@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function submitdata() {
+        var newUser = new Object();
+        newUser.username = document.getElementById('User').value;
+
+        newUser.phonenumber = document.getElementById('number').value;
+
+        console.log(newUser);
+
+        var y = new XMLHttpRequest();
+        y.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                var data = JSON.parse(this.responseText)
+                console.log(data);
+                document.getElementById('User').value=data.username;
+                document.getElementById('number').value= data.phonenumber;
+                if (data.success){
+                    //Need to add sessioStorage.setItem Here
+                    sessionStorage.setItem('LoggedInUser', data.Users.UID);
+                    window.location.href = "ideology.html";
+               }  
+               
+
+
+           }
+       };
+       //y.open('POST', 'http://192.168.1.2:7000/ideology/register', true);
+       y.open('GET', 'data/login.json', true);
+       y.setRequestHeader("Content-Type", "application/json");
+       //y.send(JSON.stringify(newUser));
+       y.send();
+   }
+
+
+</script>
+<style type="text/css">
+    .card {
+       background: #ddd;
+    border-radius: 5px;
+    padding: 18px 20px 18px 20px;
+    margin: auto;
+    width: 30%;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.12);
+    height: 300px;
+}
+@media only screen and (max-width: 500px){
+    .card {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    width: 80%;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.12);
+    height: 500px;
+    font-size: 25px;
+}
+.form-control {
+   
+    height: 56px;
+}
+.btn {
+    padding: 12px 12px;
+    font-size: 24px;
+    margin: 20px;
+}
+}
+    .title {
+       
+        text-align: center;
+    }
+    .btn{
+        float: right;
+    }
+    body{
+        margin: 10% auto;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Register</h1>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="type" id="User" class="form-control" required="required" />
+
+            </div>
+            <div class="form-group">
+                <label>Mobile</label>
+                <input type="Number" id="number" class="form-control" required="required" />
+
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" onclick="submitdata()">Let's GO &nbsp;<span class="glyphicon glyphicon-log-in"></span> </button>
+            
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
