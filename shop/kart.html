@@ -1,0 +1,29 @@
+<div class="container bookListWrapper">
+	<form role="form">
+        		<div class="form-group">
+        			<input type="text" class="form-control" ng-model="SearchFil" placeholder="Search Here">
+                </div>
+    </form>
+        <div ng-repeat="book in kart track by $index | filter:SearchFil">
+        	<div class="row bookPanel">
+				<div class="col-lg-2"><img src=img/{{book.imgUrl}}></div>
+					<div class="col-lg-9">
+        				<ul class="list-unstyled">
+        						<div class="book-details clearfix">
+        							<h3>{{book.name}}</h3>
+        							<p></p>
+        							<ul class="list-unstyled list-inline">
+        								<li>Price: {{book.price | currency:'$ '}}</li>
+        								<li>Ratings {{book.rating}}*</li>
+        								<li>Binding: {{book.binding}}</li>
+        								<li>Publisher {{book.publisher}}</li>
+        							</ul>
+        						</div>
+        				</ul>
+        			</div>
+        		<div class="col-lg-1"><button class="primary-info" name="Buy" ng-click="Buy(book)">Buy Now</button></div>
+        	</div>
+        </div>
+    </div>
+        	
+       

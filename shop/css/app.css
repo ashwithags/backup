@@ -1,0 +1,38 @@
+#headerWrapper {
+    width: 100%;
+}
+
+.logo {
+    padding: 10px;
+    margin-right: 10x;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.tagline {
+    font-size: 10px;
+    margin-top: 50px;
+    margin-left: -123px;
+    font-family: monospace;
+}
+
+.nav-wrapper {
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.bookPanel{
+        margin-bottom: 10px;
+    display: block;
+    background-color: #f5f5f557;
+    padding: 10px;
+    border-bottom: 6px solid #f3f3f3;
+}
+.container.bookListWrapper {
+    float: left;
+}
+.container.ng-enter {
+    opacity: 0;
+}
+.container.ng-enter-active {
+    opacity: 0.5
+}
