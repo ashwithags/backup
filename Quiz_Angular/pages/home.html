@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="course in courses">
+			<div ng-click="questions(course.courseDBName)" class="info-box" style="border-bottom: 5px solid {{course.courseColor}};">
+				<span class="info-box-icon" style="border: 2px solid {{course.courseColor}};">
+					<img src="{{course.courseImg}}" alt="{{course.courseDispName}}" height="45px" width="40px" />
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard"> {{course.courseDispName}}</div>
+					</a></h4>
+					<p>{{course.courseSubHeading}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

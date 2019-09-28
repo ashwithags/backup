@@ -1,0 +1,38 @@
+<form name="login" novalidate>  
+  <div ng-form="loginform">
+    <p>
+    User Name : 
+    <input type="text" name="userName" ng-model="userName" placeholder="User Name" required/>  
+    <div ng-show="loginform.userName.$dirty && loginform.userName.$invalid">  
+      <span class="error" ng-show="loginform.userName.$error.required">
+      User name is required.
+      </span>  
+    </div>  
+    </p>
+  <p>Email : 
+    <input type="email" name="email" ng-model="email" placeholder="Email ID" required/>  
+    <div ng-show="loginform.email.$dirty && loginform.email.$invalid">  
+      <span class="error" ng-show="loginform.email.$error.required">
+      Email is required.
+      </span>
+      <span class="error" ng-show="loginform.email.$error.email">  
+      Enter a valid email.
+      </span>  
+    </div>
+  </p>
+
+  <p>Password : 
+    <input type="password" name="pass" ng-model="password" placeholder="Password" required/>  
+    <div ng-show="loginform.pass.$dirty && loginform.pass.$invalid">  
+      <span class="error" ng-show="loginform.pass.$error.required">
+      Password is required.
+      </span>  
+    </div>
+  </p>
+  </div>  
+  <button type="submit" ng-disabled="(login.loginform.userName.$dirty 
+  && login.loginform.userName.$invalid)  
+  || (login.loginform.email.$dirty && login.loginform.email.$invalid) 
+  || login.loginform.pass.$dirty 
+  && login.loginform.pass.$invalid">Submit Form</button>  
+</form>   

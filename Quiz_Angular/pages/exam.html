@@ -1,0 +1,51 @@
+<div class="container" ng-show="descDisplay">
+	<div class="row">
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" >
+			<div class="questable">
+			<h1>Description</h1>
+			<div class="course Description">
+				<h2>The Test</h2>
+					The test contains 10 questions and there is no time limit. 
+
+					The test is not official, it's just a nice way to see how much you know, or don't know.
+
+					<h2>Count Your Score</h2>
+					You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 10 points.
+
+					<h2>Start the Quiz</h2>
+					Good luck!</br>
+	            <button ng-click="startTest(flase,true)">START TEST</button>
+
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" ng-show="questionDisplay">
+	<div ng-show="inProgress">
+			<div>
+				<h2>
+					<p>Questions</p>
+				</h2>
+
+				<div>
+					<h5 ng-bind="currentQuestion.question"></h5>
+					<ul ng-repeat="choice in currentQuestion.choices">
+						<li><input type="radio" class="" name="answer" value="{{choice}}">{{choice}}</li>
+					</ul>
+				</div>
+				<button class="btn btn-success chkBtn" ng-click="checkAnswer()">Check Answer</button>
+				<button class="btn btn-primary nextBtn" ng-click="nextQuestion()">Next</button>
+				<hr>
+			</div>
+			<div id="ans">YOUR SCORE IS <span ng-bind="score"> out of {{totalCount}}</span></div>
+		</div>
+		<div ng-show="quizOver">
+			<h2 style="font-family: monospace; font-weight: bold; font-style: italic; font-size: 17px; text-align: center;">Quiz is over</h2>
+		    <h3 style="font-family: monospace; font-weight: bold; font-style: italic; font-size: 17px; text-align: center;">You have scored: {{resultPercent}}%</h3>
+		    <button center color="secondary">Play again</button>
+		    <button center color="secondary">Submit Score</button>
+		</div>
+		
+</div>

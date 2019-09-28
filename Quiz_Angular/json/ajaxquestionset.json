@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "Message": "Success",
+  "questions": [
+    {
+      "question": "What makes Ajax unique?",
+      "choices": [
+        "It makes data requests asynchronously.",
+        "It uses C++ as its programming language.",
+        "It works the same with all Web browsers.",
+        "It works as a stand-alone Web-development tool."
+      ],
+      "correct": "It makes data requests asynchronously."
+    },
+    {
+      "question": "What does the XMLHttpRequest object accomplish in Ajax?",
+      "choices": [
+        "It's the programming language used to develop Ajax applications.",
+        "It provides the ability to mark up and style the display of Web-page text.",
+        "It provides a means of exchanging structured data between the Web server and client.",
+        "It provides the ability to asynchronously exchange data between Web browsers and a Web server."
+      ],
+      "correct": "It provides the ability to asynchronously exchange data between Web browsers and a Web server."
+    },
+    {
+      "question": "Ajax is a programming language.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "correct": "No"
+    },
+    {
+      "question": "What makes Ajax unique?",
+      "choices": [
+        "It makes data requests asynchronously.",
+        "It makes data requests synchronously."
+		],
+      "correct": "It makes data requests asynchronously."
+    },
+    {
+      "question": "AJAX made popular by",
+      "choices": [
+        "Google",
+		"Microsoft",
+		"Opera",
+    "IBM"
+      ],
+      "correct": "Firefox"
+    }
+  ]
+}

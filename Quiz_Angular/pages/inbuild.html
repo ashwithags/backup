@@ -1,0 +1,9 @@
+<ul class="example-animate-container">
+	<li class="animate-repeat" ng-repeat="student in students">
+	  {{$index + 1}}. First Name <strong>{{student.firstName}} </strong>
+	  Last Name <strong>{{student.lastName}}</strong> Email <strong>{{student.email}}</strong>.
+	</li>
+	<li class="animate-repeat" ng-if="students.length == 0">
+	  <strong>No results found...</strong>
+	</li>
+</ul>
