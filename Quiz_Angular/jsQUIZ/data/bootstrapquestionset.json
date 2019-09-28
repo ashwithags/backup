@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "Message": "Success",
+  "questions": [
+    {
+      "question": "What are the key components of Bootstrap?",
+      "choices": [
+        "Scaffolding List of layout components Plugins",
+        "Customize your components Scaffolding"
+      ],
+      "correct": "0"
+    },
+    {
+      "question": "What is Jumbotron?",
+      "choices": [
+        "Used to resizing the number of columns changes according to the available space.",
+        "Used for content that you want to highlight like some slogan OR marketing headline."
+      ],
+      "correct": "1"   },
+    {
+      "question": "Which of the following is/are true about Bootstrap?",
+      "choices": [
+        "Free front-end framework.",
+        "Open source product.",
+        "It gives you the ability to create responsive designs",
+        "All the above"
+      ],
+      "correct": "3"
+    },
+     {
+      "question": "The Bootstrap grid system is based on how many columns",
+      "choices": [
+        "3",
+        "9",
+        "6",
+        "12"
+      ],
+      "correct": "3"
+    }
+  ]
+}

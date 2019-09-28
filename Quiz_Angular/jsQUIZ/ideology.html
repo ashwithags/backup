@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	
+	.info-box-content h4 {
+		font-size: 18px;
+		color: #333;
+		padding: 26px 20px;
+		margin-left: 80px;
+
+	}
+	.info-box-icon {
+		border-radius: 7px;
+		display: block;
+		float: left;
+		height: 67px;
+		width: 66px;
+		text-align: center;
+		font-size: 38px;
+		padding: 6px;
+		margin: 7px;
+
+
+	}
+	.icon-html5 .info-box-icon{
+		border: 2px solid #C93756;
+	}
+
+	.icon-html5 .fa{
+
+		color: #C93756 !important;
+	}
+	.icon-Boot .fa{
+
+		color: #5D3F6A !important;
+	}
+	.icon-Js .fa{
+		color: #F89406 !important;
+
+	}
+	.icon-Ajax .fa{
+		color: #03C9A9 !important;
+		
+	}
+	
+	.icon-Ajax .info-box-icon{
+		border: 2px solid #03C9A9;
+
+	}
+	.icon-Js .info-box-icon{
+		border: 2px solid #F89406;
+
+	}
+	.icon-Boot .info-box-icon{
+		border: 2px solid #5D3F6A;
+
+	}
+	.info-box {
+		display: block;
+		min-height: 90px;
+		height: 90px;
+		background: #fff;
+		width: 100%;
+		box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+		border-radius: 2px;
+		margin-bottom: 9px;
+		border-left: 1px solid #ccc;
+		box-shadow: #635f5f 0.2em 0.2em 1em;
+		border-radius: 7px;
+	}
+	.info-box :hover {
+		z-index: 999;
+		transition: all 200ms ease-in;
+		transform: scale(1.05);
+	}
+	.container{
+		margin: 5%;
+		box-shadow: 1px 2px 12px;
+		padding: 5%;
+		background-color: #f3f3f1;
+
+	}
+</style>
+<script>
+	window.onload = function () {
+		if (sessionStorage.getItem('LoggedInUser')== undefined || sessionStorage.getItem('LoggedInUser') == null ){
+			window.location.href='test.html'
+		}
+
+	}
+
+
+	function showQues(q) {
+	// alert(q);
+	sessionStorage.setItem('questionSet', q);
+	window.location.href='Question.html';
+}
+</script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('html')">
+			<div class="info-box icon-html5" style="border-bottom: 5px solid #C93756;">
+				<span class="info-box-icon"><i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard"> HTML</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('Ajax')">
+			<div class="info-box icon-Ajax" style="border-bottom: 5px solid #03C9A9;">
+				<span class="info-box-icon"><i class="fa fa-font" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard">Ajax</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('javascript')">
+			<div class="info-box icon-Js" style="border-bottom: 5px solid #F89406;">
+				<span class="info-box-icon"><i class="fa fa-code" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard">javascript</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('css')">
+			<div class="info-box icon-Boot" style="border-bottom: 5px solid #5D3F6A;">
+				<span class="info-box-icon"><i class="fa fa-bold" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard">css</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('bootstrap')">
+			<div class="info-box icon-Boot" style="border-bottom: 5px solid #5D3F6A;">
+				<span class="info-box-icon"><i class="fa fa-bold" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard">Bootstrap</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>s
+		<div class="col-md-3 col-sm-6 col-xs-12" onclick="showQues('html')">
+			<div class="info-box icon-Boot" style="border-bottom: 5px solid #5D3F6A;">
+				<span class="info-box-icon"><i class="fa fa-bold" aria-hidden="true"></i>
+				</span>
+				<div class="info-box-content">
+					<h4><a id="html"><div class="mycard">HTML</div>
+					</a></h4>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!-- <div class="col-md-3">
+
+</div>
+<div class="col-md-3">
+<a id="Ajax" href="Tajax.html" class="btn btn-danger" onclick="showAjaxDiv()"><div class="mycard">Ajax</div></a>
+</div>
+<div class="col-md-3">
+<a id="Js" href="Tjs.html" class="btn btn-info" onclick="showJSDiv()"><div class="mycard">Js</div></a>
+</div>
+<div class="col-md-3">
+<a id="Boot" href="Tboot.html" class="btn btn-success" onclick="showBootstrapDiv()" ><div class="mycard">Bootstrap</div></a>
+</div>
+</div>
+<div id="divHtml" class="DivContent">
+hey  HTML!
+</div>
+<div id="divAjax" class="DivContent">
+hey  Ajax!
+</div>
+<div id="divJs" class="DivContent">
+hey  JS!
+</div>
+<div id="divBoot" class="DivContent">
+hey Bootstrap!
+</div> -->
+
+
+</body>
+
+
+</body>
+</html>

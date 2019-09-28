@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .container{
+            margin-top:10px;
+        }
+    </style>
+    <script src="addQuestion.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="form-group">
+<label>Type:</label>
+<select id="category" class="btn btn-primary dropdown-toggle">
+  <option value="HTML">HTML</option>
+  <option value="Ajax">Ajax</option>
+  <option value="Bootstrap">Bootstrap</option>
+  <option value="JavaScript">JavaScript</option>
+</select>
+  
+ 
+</div>
+<div class="col-md-7">
+<div class="form-group">
+<label>Question</label>
+<textarea type="text" id="quest" rows="3" class="form-control"></textarea>
+</div>
+<div class="form-group">
+<label>Option1</label>
+<input type="text" id="opt1" class="form-control">
+</div>
+<div class="form-group">
+<label>Option2</label>
+<input type="text" id="opt2" class="form-control">
+</div>
+<div class="form-group">
+<label>Option3</label>
+<input type="text" id="opt3" class="form-control">
+</div>
+<div class="form-group">
+<label>Option4</label>
+<input type="text" id="opt4" class="form-control">
+</div>
+<div class="form-group">
+<label>Correct Ans</label>
+<input type="text" id="Correct" class="form-control">
+</div>
+<div class="form-group">
+<button class="btn btn-primary" onclick="addnewQuestion()">Add Question</button>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+	.card {
+			background: #efefef;
+	        border-radius: 5px;
+			    padding: 15px 15px 15px 15px;
+			    margin: auto;
+			    width: 30%;
+			  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+			  
+			 
+			}
+			.title{
+				margin:auto;
+				text-align: center;
+			}
